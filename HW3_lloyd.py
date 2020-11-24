@@ -33,7 +33,7 @@ def lloyd(x, centers, k):
         new_centers = move_centers(x, closest, centers, k)
         error = find_error(x, new_centers,k)
         error_list.append(error)
-        if counter % 100 == 0:
+        if counter % 10 == 0:
             print(error)
         counter += 1
         #done when we haven't updated any steps
